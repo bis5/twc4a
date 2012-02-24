@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/hometl_linearlayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/hometl_btTweet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tweet" />
+
+        <Button
+            android:id="@+id/hometl_btMension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mensions" />
+
+        <Button
+            android:id="@+id/hometl_btDM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DM" />
+
+        <Button
+            android:id="@+id/hometl_btFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favs" />
+
+        <Button
+            android:id="@+id/hometl_btAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

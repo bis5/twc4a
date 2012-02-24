@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tx_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="とりあえずログインして下さい。話はそれからです。ちなみにログインボタンをクリックすると認証用にブラウザが起動します。" />
+
+    <Button
+        android:id="@+id/bt_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Twitterにログイン" />
+
+</LinearLayout>

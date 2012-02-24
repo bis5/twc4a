@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.mydns.bis5.app.TwitterClient"
+    android:versionCode="0"
+    android:versionName="0.0.20120221" >
+
+    <uses-sdk android:minSdkVersion="10" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="auth" android:host="twc4a" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.OAuthActivity"></activity>
+    </application>
+
+</manifest>

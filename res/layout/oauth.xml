@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/oauth_linearlayout0"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+<LinearLayout
+        android:id="@+id/oauth_linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/oauth_txPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PIN:" />
+
+        <EditText
+            android:id="@+id/oauth_editPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="PINを入力してくだしあ"/>
+
+        <Button
+            android:id="@+id/oauth_btPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="決定" />
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"  />
+
+</LinearLayout>

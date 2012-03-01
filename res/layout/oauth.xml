@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<WebView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/oauth_webview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+<!--
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/oauth_linearlayout0"
     android:layout_width="fill_parent"
@@ -37,3 +42,4 @@
         android:layout_height="match_parent"  />
 
 </LinearLayout>
+-->

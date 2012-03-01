@@ -22,13 +22,8 @@ public final class R {
         public static final int hometl_btTweet=0x7f050001;
         public static final int hometl_linearlayout1=0x7f050000;
         public static final int linearlayout0=0x7f050006;
-        public static final int oauth_btPin=0x7f05000d;
-        public static final int oauth_editPin=0x7f05000c;
-        public static final int oauth_linearlayout0=0x7f050009;
-        public static final int oauth_linearlayout1=0x7f05000a;
-        public static final int oauth_txPin=0x7f05000b;
+        public static final int oauth_webview=0x7f050009;
         public static final int tx_Login=0x7f050007;
-        public static final int webview=0x7f05000e;
     }
     public static final class layout {
         public static final int hometl=0x7f030000;

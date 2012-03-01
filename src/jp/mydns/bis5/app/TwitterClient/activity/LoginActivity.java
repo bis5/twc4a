@@ -70,7 +70,7 @@ public class LoginActivity extends Activity {
     		oauth = new OAuthAuthorization(conf);
     		oauth.setOAuthAccessToken(null);
     		try{
-    			rtoken = oauth.getOAuthRequestToken();
+    			rtoken = oauth.getOAuthRequestToken(CALLBACK);
     		} catch (TwitterException ex) {
     			ex.printStackTrace();
     			finish();
@@ -83,11 +83,14 @@ public class LoginActivity extends Activity {
     }
     
     @Override public void onActivityResult(int arg0, int arg1, Intent data) {
-    	if (data == null || !data.getExtras().containsKey("pin")) return; //cancel
+    	if (data == null || !data.getExtras().containsKey("oauth_token") || !data.getExtras().containsKey("oauth_verifier")) {
+    		//cancel
+    		return;
+    	}
     	try {
 	    	AccessToken atoken = oauth.getOAuthAccessToken(
 	    			rtoken,
-	    			data.getExtras().getString("pin")
+	    			data.getExtras().getString("oauth_verifier")
 	    			);
 	    	
 	    	SharedPreferences pref = getSharedPreferences("TWC4A", MODE_PRIVATE);
@@ -96,6 +99,8 @@ public class LoginActivity extends Activity {
 	    	editor.putString("oauth_token_secret", atoken.getTokenSecret());
 	    	editor.putString("auth_status", "available");
 	    	editor.commit();
+	    	
+	    	login();
     	} catch (TwitterException ex) {
     		ex.printStackTrace();
     		finish();

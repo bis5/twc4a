@@ -8,7 +8,7 @@ public class HomeTimelineActivity extends Activity {
 	
 	@Override public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setLayoutView(R.layout.hometl);
+		setContentView(R.layout.hometl);
 		
 	}
 }

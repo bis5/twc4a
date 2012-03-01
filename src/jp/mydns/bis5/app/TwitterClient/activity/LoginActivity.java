@@ -18,8 +18,8 @@ import twitter4j.conf.Configuration;
 import twitter4j.auth.OAuthAuthorization;
 
 public class LoginActivity extends Activity {
-	private static final String twitter_consumer_key = "XWfAxqPNUE27lIQGuBIdw";
-    private static final String twitter_consumer_secret = "GLEPpFe5nLamrlTHrv8lpBtxOlaVRuJ5Dl86BSI0";
+	static final String twitter_consumer_key = "XWfAxqPNUE27lIQGuBIdw";
+    static final String twitter_consumer_secret = "GLEPpFe5nLamrlTHrv8lpBtxOlaVRuJ5Dl86BSI0";
 	static final String CALLBACK = "auth://twc4a";
 
 	private RequestToken rtoken = null;
